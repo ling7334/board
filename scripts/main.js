@@ -468,7 +468,7 @@ function handleSignUp() {
     }
     console.log(error);
     // [END_EXCLUDE]
-  });
+  }).then(sendEmailVerification);
   // [END createwithemail]
 }
 
@@ -514,7 +514,7 @@ function sendPasswordReset() {
 // Bindings on load.
 window.addEventListener('load', function () {
   emailSignInButton.addEventListener('click', toggleSignIn);
-  registerButton.addEventListener('click', handleSignUp).then(sendEmailVerification);
+  registerButton.addEventListener('click', handleSignUp);
   // Bind Sign in button.
   signInButton.addEventListener('click', function () {
     var provider = new firebase.auth.GoogleAuthProvider();
