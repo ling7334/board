@@ -45,16 +45,6 @@
   <link rel="stylesheet" href="main.css">
 
   <!-- Firebase -->
-  <!-- *******************************************************************************
-       * TODO(DEVELOPER): Paste the initialization snippet by navigating to:
-
-        https://console.firebase.google.com
-
-       and choosing a project you've created.  Then click the red HTML logo at the top
-       right of the page with the caption "Add Firebase to your web app".
-
-       Copy the snippet that appears in place of this comment.
-       *************************************************************************** -->
   <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
   <script>
   // Initialize Firebase
@@ -77,6 +67,16 @@
   <!-- Splash screen -->
   <section id="page-splash">
     <h3 class="logo">Flynn's Message Board</h3>
+
+    <div>
+        <input class="mdl-textfield__input" style="display:inline;width:auto;" type="text" id="email" name="email" placeholder="Email"/>
+        &nbsp;&nbsp;&nbsp;
+        <input class="mdl-textfield__input" style="display:inline;width:auto;" type="password" id="password" name="password" placeholder="Password"/>
+        <br>
+        <button id="email-button" class="mdl-button--raised mdl-button mdl-js-button mdl-js-ripple-effect"><i class="material-icons">email</i> Sign in with Email</button>
+      <button id="register-button" class="mdl-button--raised mdl-button mdl-js-button mdl-js-ripple-effect"><i class="material-icons">add</i> Register</button>
+    </div>
+    <br>
     <div>
       <button id="sign-in-button" class="mdl-button--raised mdl-button mdl-js-button mdl-js-ripple-effect"><i class="material-icons">account_circle</i> Sign in with Google</button>
     </div>

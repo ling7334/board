@@ -122,6 +122,14 @@ h3 {
     text-overflow: ellipsis;
     text-align: left;
 }
+#email-button {
+    margin-left: 10px;
+    color: inherit;
+}
+#register-button {
+    margin-left: 10px;
+    color: inherit;
+}
 #sign-in-button {
     margin-left: 10px;
     color: inherit;
